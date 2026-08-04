@@ -1,0 +1,292 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0A3D62;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #F4B400;
+}
+
+
+
+/* ===== ACCUEIL ===== */
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.hero-text {
+    padding: 30px;
+}
+
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #0A3D62;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #F4B400;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+/* ===== SERVICES ===== */
+
+.services {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.service-box {
+    width: 280px;
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
+
+
+
+/* ===== DESTINATIONS ===== */
+
+.destination-page {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.destination-card {
+    width: 300px;
+    background: white;
+    box-shadow: 0 5px 15px #ccc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.destination-card h2 {
+    color: #0A3D62;
+    margin: 15px;
+}
+
+
+
+/* ===== DESTINATIONS POPULAIRES ===== */
+
+.popular {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.popular-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.popular-box {
+    width: 220px;
+}
+
+
+.popular-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+/* ===== CONTACT ===== */
+
+.contact-section {
+
+    min-height: 600px;
+
+    background-image: 
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ),
+    url("images/bureau.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-box {
+
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+
+input, textarea {
+
+    padding: 10px;
+
+}
+
+
+button {
+
+    background: #0A3D62;
+    color: white;
+    padding: 12px;
+    border: none;
+}
+
+
+
+/* ===== FOOTER ===== */
+
+footer {
+
+    background: #0A3D62;
+    color: white;
+    text-align: center;
+    padding: 25px;
+
+}
+
+
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction: column;
+        gap:20px;
+
+    }
+
+
+    nav{
+
+        flex-direction: column;
+        align-items:center;
+
+    }
+
+
+    .hero-text h1{
+
+        font-size:28px;
+
+    }
+
+
+    .contact-box{
+
+        width:90%;
+
+    }
+
+}
